@@ -14,7 +14,8 @@ function calculateRectangleArea() {
 
   const rectangleArea = rectangleHeight * rectangleWidth;
 
-  console.log(rectangleArea);
+    console.log(rectangleArea);
+    addToCalculationEntry("rectangle", rectangleArea);
 }
 
 function calculateParallelogramArea() {
@@ -25,7 +26,8 @@ function calculateParallelogramArea() {
 
   const ParallelogramArea = ParallelogramWidth * ParallelogramHeight;
 
-  console.log(ParallelogramArea);
+    console.log(ParallelogramArea);
+    addToCalculationEntry("parallelogram", ParallelogramArea);
 }
 
 function addToCalculationEntry(areaType, area) {
@@ -36,8 +38,8 @@ function addToCalculationEntry(areaType, area) {
     const p = document.createElement("p");
     p.classList.add('flex', 'justify-between')
 
-  p.innerHTML =  `<div> ${count +
-    1}. ${areaType} ${area} cm<sup>2</sup></div> <button class="bg-blue-400 py-1 px-2 rounded text-white">
+  p.innerHTML =  `<div>  ${count +
+    1}. ${areaType} ${area} cm<sup>2</sup></div> <button class="bg-[#1090D8] py-1 px-2 rounded text-white">
     Convert to m<sup>2</sup>
   </button>`;
 
