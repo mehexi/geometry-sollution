@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="font.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="px-12">
+    <main>
+      <!-- header section -->
+      <section class="mt-7">
+        <div
+          class="bg-[#1090D81A] flex justify-between items-center px-10 py-2 rounded-xl"
+        >
+          <div class="flex flex-col gap-0">
+            <span class="font-bold text-[35px] text-gray-700">interactive</span>
+            <span class="text-[20px] text-gray-400">Geometry Genius</span>
+          </div>
+          <div>
+            <button
+              class="px-9 py-2 bg-[#1090D8] rounded font-semibold text-white text-[20px]"
+            >
+              blog
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- card section -->
+      <section class="mt-12">
+        <div class="grid grid-cols-4 gap-4">
+          <div
+            class="border py-6 px-3 rounded-lg flex flex-col gap-12 justify-center align-middle items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="243"
+              height="194"
+              viewBox="0 0 243 194"
+              fill="none"
+            >
+              <path d="M121.5 0L243 194H0L121.5 0Z" fill="#FEFF5B" />
+            </svg>
+            <div class="flex flex-col items-center gap-3">
+              <h1 class="font-semibold text-2xl">Tringle</h1>
+              <h1 class="text-[#414141]">Area (A) = 0.5 x b x</h1>
+
+              <div class="flex gap-3">
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="b"
+                />
+                <h1>cm</h1>
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="h"
+                />
+                <h1>cm</h1>
+              </div>
+            </div>
+            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+              claculate
+            </button>
+          </div>
+          <div
+            class="border py-6 px-3 rounded-lg flex flex-col gap-12 justify-center align-middle items-center"
+          >
+            <svg
+              width="307"
+              height="194"
+              viewBox="0 0 307 194"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="307" height="194" fill="#CCCCFF" />
+            </svg>
+
+            <div class="flex flex-col items-center gap-3">
+              <h1 class="font-semibold text-2xl">Rectangle</h1>
+              <h1 class="text-[#414141]">Area (A) = W x L</h1>
+
+              <div class="flex gap-3">
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="b"
+                />
+                <h1>cm</h1>
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="h"
+                />
+                <h1>cm</h1>
+              </div>
+            </div>
+            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+              claculate
+            </button>
+          </div>
+          <div
+            class="border py-6 px-3 rounded-lg flex flex-col gap-12 justify-center align-middle items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="350"
+              height="194"
+              viewBox="0 0 350 194"
+              fill="none"
+            >
+              <path d="M58 0H349.5L281.5 194H0L58 0Z" fill="#B2F069" />
+            </svg>
+            <div class="flex flex-col items-center gap-3">
+              <h1 class="font-semibold text-2xl">Parallelogram</h1>
+              <h1 class="text-[#414141]">Area (A) = b x h</h1>
+
+              <div class="flex gap-3">
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="b"
+                />
+                <h1>cm</h1>
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="h"
+                />
+                <h1>cm</h1>
+              </div>
+            </div>
+            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+              claculate
+            </button>
+          </div>
+          <!-- area calcuation -->
+          <div
+            class="border py-6 px-3 rounded-lg flex flex-col gap-12 items-center"
+          >
+            <span class="text-[20px] font-semibold underline">
+              Area Calculation</span
+            >
+            <div class="flex flex-col gap-4">
+              <div class="grid grid-cols-3 items-center">
+                <div class="col-span-2">
+                  <p>1. Triangle 12cm<sup>2</sup></p>
+                </div>
+                <div>
+                  <button class="bg-blue-400 py-1 px-2 rounded text-white">
+                    Convert to m<sup>2</sup>
+                  </button>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 items-center">
+                <div class="col-span-2">
+                  <p>1. Triangle 12cm<sup>2</sup></p>
+                </div>
+                <div>
+                  <button class="bg-blue-400 py-1 px-2 rounded text-white">
+                    Convert to m<sup>2</sup>
+                  </button>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 items-center">
+                <div class="col-span-2">
+                  <p>1. Triangle 12cm<sup>2</sup></p>
+                </div>
+                <div>
+                  <button class="bg-blue-400 py-1 px-2 rounded text-white">
+                    Convert to m<sup>2</sup>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card start -->
+          <div
+            class="border py-6 px-3 rounded-lg flex flex-col gap-12 justify-center align-middle items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="257"
+              height="194"
+              viewBox="0 0 257 194"
+              fill="none"
+            >
+              <path d="M54 0H257L194 194H0L54 0Z" fill="#B5A908" />
+            </svg>
+            <div class="flex flex-col items-center gap-3">
+              <h1 class="font-semibold text-2xl">Tringle</h1>
+              <h1 class="text-[#414141]">Area (A) = 0.5 x b x</h1>
+
+              <div class="flex gap-3">
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="b"
+                />
+                <h1>cm</h1>
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="h"
+                />
+                <h1>cm</h1>
+              </div>
+            </div>
+            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+              claculate
+            </button>
+          </div>
+          <div
+            class="border py-6 px-3 rounded-lg flex flex-col gap-12 justify-center align-middle items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="194"
+              height="188"
+              viewBox="0 0 194 188"
+              fill="none"
+            >
+              <path d="M0 42L97 0L194 42L169 188H28L0 42Z" fill="#FFC1AC" />
+            </svg>
+            <div class="flex flex-col items-center gap-3">
+              <h1 class="font-semibold text-2xl">Tringle</h1>
+              <h1 class="text-[#414141]">Area (A) = 0.5 x b x</h1>
+
+              <div class="flex gap-3">
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="b"
+                />
+                <h1>cm</h1>
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="h"
+                />
+                <h1>cm</h1>
+              </div>
+            </div>
+            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+              claculate
+            </button>
+          </div>
+          <div
+            class="border py-6 px-3 rounded-lg flex flex-col gap-12 justify-center align-middle items-center"
+          >
+            <svg
+              width="287"
+              height="178"
+              viewBox="0 0 287 178"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse cx="143.5" cy="89" rx="143.5" ry="89" fill="#D9D9D9" />
+            </svg>
+
+            <div class="flex flex-col items-center gap-3">
+              <h1 class="font-semibold text-2xl">Tringle</h1>
+              <h1 class="text-[#414141]">Area (A) = 0.5 x b x</h1>
+
+              <div class="flex gap-3">
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="b"
+                />
+                <h1>cm</h1>
+                <input
+                  class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
+                  type="text"
+                  placeholder="h"
+                />
+                <h1>cm</h1>
+              </div>
+            </div>
+            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+              claculate
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
