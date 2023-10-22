@@ -50,7 +50,7 @@ function calculateEllipseArea() {
     const ellipseWidth = document.getElementById("ellipse-width").value
     const ellipseHeight = document.getElementById("ellipse-height").value
 
-    const ellipseArea = Math.PI * ellipseHeight * ellipseWidth
+    const ellipseArea = (Math.PI * ellipseHeight * ellipseWidth).toFixed(4)
 
     addToCalculationEntry("Ellipse", ellipseArea )
 }
