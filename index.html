@@ -175,25 +175,27 @@
               <path d="M54 0H257L194 194H0L54 0Z" fill="#B5A908" />
             </svg>
             <div class="flex flex-col items-center gap-3">
-              <h1 class="font-semibold text-2xl">Tringle</h1>
-              <h1 class="text-[#414141]">Area (A) = 0.5 x b x</h1>
+              <h1 class="font-semibold text-2xl">Rhombus</h1>
+              <h1 class="text-[#414141]">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></h1>
 
               <div class="flex gap-3">
                 <input
+                  id="rhombus-width"
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
-                  placeholder="b"
+                  placeholder="d1"
                 />
                 <h1>cm</h1>
                 <input
+                id="rhombus-height"
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
-                  placeholder="h"
+                  placeholder="d2"
                 />
                 <h1>cm</h1>
               </div>
             </div>
-            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+            <button onclick="calculateRhombusArea()" class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
               claculate
             </button>
           </div>
@@ -210,20 +212,22 @@
               <path d="M0 42L97 0L194 42L169 188H28L0 42Z" fill="#FFC1AC" />
             </svg>
             <div class="flex flex-col items-center gap-3">
-              <h1 class="font-semibold text-2xl">Tringle</h1>
-              <h1 class="text-[#414141]">Area (A) = 0.5 x b x</h1>
+              <h1 class="font-semibold text-2xl">Pentagon</h1>
+              <h1 class="text-[#414141]">Area (A) = 0.5 x p x b</h1>
 
               <div class="flex gap-3">
                 <input
+                id="pentagon-width"
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
-                  placeholder="b"
+                  placeholder="p"
                 />
                 <h1>cm</h1>
                 <input
+                id="pentagon-height"
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
-                  placeholder="h"
+                  placeholder="b"
                 />
                 <h1>cm</h1>
               </div>
@@ -246,20 +250,20 @@
             </svg>
 
             <div class="flex flex-col items-center gap-3">
-              <h1 class="font-semibold text-2xl">Tringle</h1>
-              <h1 class="text-[#414141]">Area (A) = 0.5 x b x</h1>
+              <h1 class="font-semibold text-2xl">Ellipse</h1>
+              <h1 class="text-[#414141]">Area (A) = πab</h1>
 
               <div class="flex gap-3">
                 <input
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
-                  placeholder="b"
+                  placeholder="a"
                 />
                 <h1>cm</h1>
                 <input
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
-                  placeholder="h"
+                  placeholder="b"
                 />
                 <h1>cm</h1>
               </div>

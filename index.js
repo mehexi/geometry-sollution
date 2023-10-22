@@ -30,6 +30,14 @@ function calculateParallelogramArea() {
   addToCalculationEntry("parallelogram", ParallelogramArea);
 }
 
+function calculateRhombusArea() {
+    const rhombusWidth = document.getElementById("rhombus-width").value
+    const rhombusHeight = document.getElementById("rhombus-height").value
+
+    const rhombusArea = 0.5 * rhombusHeight * rhombusWidth
+    addToCalculationEntry("Rhombus", rhombusArea);
+}
+
 function addToCalculationEntry(areaType, area) {
   const calculationCount = document.getElementById("calculation-entry");
 
@@ -45,7 +53,7 @@ function addToCalculationEntry(areaType, area) {
 
     const convertButton = p.querySelector(".convert-btn");
     
-    
+
   convertButton.addEventListener("click", function() {
     const currentAreaSpan = p.querySelector(".area-value");
 
