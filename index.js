@@ -4,7 +4,6 @@ function calculateTringleArea() {
 
   const tringleArea = 0.5 * tringleBase * tringleHight;
 
-  
   addToCalculationEntry("tringle", tringleArea);
 }
 
@@ -14,7 +13,6 @@ function calculateRectangleArea() {
 
   const rectangleArea = rectangleHeight * rectangleWidth;
 
-  
   addToCalculationEntry("rectangle", rectangleArea);
 }
 
@@ -26,33 +24,32 @@ function calculateParallelogramArea() {
 
   const ParallelogramArea = ParallelogramWidth * ParallelogramHeight;
 
-  
   addToCalculationEntry("parallelogram", ParallelogramArea);
 }
 
 function calculateRhombusArea() {
-    const rhombusWidth = document.getElementById("rhombus-width").value
-    const rhombusHeight = document.getElementById("rhombus-height").value
+  const rhombusWidth = document.getElementById("rhombus-width").value;
+  const rhombusHeight = document.getElementById("rhombus-height").value;
 
-    const rhombusArea = 0.5 * rhombusHeight * rhombusWidth
-    addToCalculationEntry("Rhombus", rhombusArea);
+  const rhombusArea = 0.5 * rhombusHeight * rhombusWidth;
+  addToCalculationEntry("Rhombus", rhombusArea);
 }
 
 function calculatePentagonArea() {
-    const PentagonWidth = document.getElementById("pentagon-width").value
-    const PentagonHeight = document.getElementById("pentagon-height").value
+  const PentagonWidth = document.getElementById("pentagon-width").value;
+  const PentagonHeight = document.getElementById("pentagon-height").value;
 
-    const PentagonArea = 0.5 * PentagonHeight * PentagonWidth
-    addToCalculationEntry("Pentagon", PentagonArea)
+  const PentagonArea = 0.5 * PentagonHeight * PentagonWidth;
+  addToCalculationEntry("Pentagon", PentagonArea);
 }
 
 function calculateEllipseArea() {
-    const ellipseWidth = document.getElementById("ellipse-width").value
-    const ellipseHeight = document.getElementById("ellipse-height").value
+  const ellipseWidth = document.getElementById("ellipse-width").value;
+  const ellipseHeight = document.getElementById("ellipse-height").value;
 
-    const ellipseArea = (Math.PI * ellipseHeight * ellipseWidth).toFixed(4)
+  const ellipseArea = (Math.PI * ellipseHeight * ellipseWidth).toFixed(4);
 
-    addToCalculationEntry("Ellipse", ellipseArea )
+  addToCalculationEntry("Ellipse", ellipseArea);
 }
 
 function addToCalculationEntry(areaType, area) {
@@ -68,8 +65,7 @@ function addToCalculationEntry(areaType, area) {
     Convert to m<sup>2</sup>
   </button>`;
 
-    const convertButton = p.querySelector(".convert-btn");
-    
+  const convertButton = p.querySelector(".convert-btn");
 
   convertButton.addEventListener("click", function() {
     const currentAreaSpan = p.querySelector(".area-value");
