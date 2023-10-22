@@ -14,8 +14,8 @@ function calculateRectangleArea() {
 
   const rectangleArea = rectangleHeight * rectangleWidth;
 
-    console.log(rectangleArea);
-    addToCalculationEntry("rectangle", rectangleArea);
+  console.log(rectangleArea);
+  addToCalculationEntry("rectangle", rectangleArea);
 }
 
 function calculateParallelogramArea() {
@@ -26,8 +26,8 @@ function calculateParallelogramArea() {
 
   const ParallelogramArea = ParallelogramWidth * ParallelogramHeight;
 
-    console.log(ParallelogramArea);
-    addToCalculationEntry("parallelogram", ParallelogramArea);
+  console.log(ParallelogramArea);
+  addToCalculationEntry("parallelogram", ParallelogramArea);
 }
 
 function addToCalculationEntry(areaType, area) {
@@ -35,13 +35,26 @@ function addToCalculationEntry(areaType, area) {
 
   const count = calculationCount.childElementCount;
 
-    const p = document.createElement("p");
-    p.classList.add('flex', 'justify-between')
+  const p = document.createElement("p");
+  p.classList.add("flex", "justify-between");
 
-  p.innerHTML =  `<div>  ${count +
-    1}. ${areaType} ${area} cm<sup>2</sup></div> <button class="bg-[#1090D8] py-1 px-2 rounded text-white">
+  p.innerHTML = `<div>  ${count +
+    1}. ${areaType} <span class="area-value"> ${area} cm</span><sup>2</sup></div> <button class="convert-btn bg-[#1090D8] py-1 px-2 rounded text-white">
     Convert to m<sup>2</sup>
   </button>`;
+
+    const convertButton = p.querySelector(".convert-btn");
+    
+    
+  convertButton.addEventListener("click", function() {
+    const currentAreaSpan = p.querySelector(".area-value");
+
+    const currentArea = parseFloat(currentAreaSpan.innerText);
+
+    const convertedArea = (currentArea * 0.0001).toFixed(4);
+
+    currentAreaSpan.innerText = `${convertedArea} m`;
+  });
 
   calculationCount.appendChild(p);
 }
