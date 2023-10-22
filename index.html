@@ -26,7 +26,7 @@
             <span class="text-[20px] text-gray-400">Geometry Genius</span>
           </div>
           <div>
-            <button
+            <button 
               class="px-9 py-2 bg-[#1090D8] rounded font-semibold text-white text-[20px]"
             >
               blog
@@ -232,7 +232,7 @@
                 <h1>cm</h1>
               </div>
             </div>
-            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+            <button onclick="calculatePentagonArea()" class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
               claculate
             </button>
           </div>
@@ -255,12 +255,14 @@
 
               <div class="flex gap-3">
                 <input
+                id="ellipse-width"
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
                   placeholder="a"
                 />
                 <h1>cm</h1>
                 <input
+                id="ellipse-height"
                   class="w-[95px] h-[32px] bg-[#F1F1F1] px-2 rounded"
                   type="text"
                   placeholder="b"
@@ -268,7 +270,7 @@
                 <h1>cm</h1>
               </div>
             </div>
-            <button class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
+            <button onclick="calculateEllipseArea()" class="bg-[#1090D8] text-white px-10 py-3 rounded-full">
               claculate
             </button>
           </div>

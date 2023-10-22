@@ -4,7 +4,7 @@ function calculateTringleArea() {
 
   const tringleArea = 0.5 * tringleBase * tringleHight;
 
-  console.log(tringleArea);
+  
   addToCalculationEntry("tringle", tringleArea);
 }
 
@@ -14,7 +14,7 @@ function calculateRectangleArea() {
 
   const rectangleArea = rectangleHeight * rectangleWidth;
 
-  console.log(rectangleArea);
+  
   addToCalculationEntry("rectangle", rectangleArea);
 }
 
@@ -26,7 +26,7 @@ function calculateParallelogramArea() {
 
   const ParallelogramArea = ParallelogramWidth * ParallelogramHeight;
 
-  console.log(ParallelogramArea);
+  
   addToCalculationEntry("parallelogram", ParallelogramArea);
 }
 
@@ -36,6 +36,23 @@ function calculateRhombusArea() {
 
     const rhombusArea = 0.5 * rhombusHeight * rhombusWidth
     addToCalculationEntry("Rhombus", rhombusArea);
+}
+
+function calculatePentagonArea() {
+    const PentagonWidth = document.getElementById("pentagon-width").value
+    const PentagonHeight = document.getElementById("pentagon-height").value
+
+    const PentagonArea = 0.5 * PentagonHeight * PentagonWidth
+    addToCalculationEntry("Pentagon", PentagonArea)
+}
+
+function calculateEllipseArea() {
+    const ellipseWidth = document.getElementById("ellipse-width").value
+    const ellipseHeight = document.getElementById("ellipse-height").value
+
+    const ellipseArea = Math.PI * ellipseHeight * ellipseWidth
+
+    addToCalculationEntry("Ellipse", ellipseArea )
 }
 
 function addToCalculationEntry(areaType, area) {
